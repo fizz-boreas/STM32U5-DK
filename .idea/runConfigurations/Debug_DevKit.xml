@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Debug DevKit" type="com.jetbrains.cidr.embedded.customgdbserver.type" factoryName="com.jetbrains.cidr.embedded.customgdbserver.factory" PROGRAM_PARAMS="-e -d -v --frequency 24000 -t -cp &quot;$BOREAS_FRAMEWORK$/ST/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.6.0.202101291314/tools/bin&quot;" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="STM32U5-DK" TARGET_NAME="STM32U5-DK.elf" CONFIG_NAME="Debug" version="1" RUN_TARGET_PROJECT_NAME="STM32U5-DK" RUN_TARGET_NAME="STM32U5-DK.elf">
+    <custom-gdb-server version="1" gdb-connect="127.0.0.1:61234" executable="$BOREAS_FRAMEWORK$/ST/com.st.stm32cube.ide.mcu.externaltools.stlink-gdb-server.win32_1.6.0.202101291314/tools/bin/ST-LINK_gdbserver.exe" warmup-ms="0" download-type="ALWAYS" reset-cmd="monitor reset" reset-after-download="true">
+      <debugger toolchainName="MinGW" />
+    </custom-gdb-server>
+    <method v="2">
+      <option name="CLION.COMPOUND.BUILD" enabled="true" />
+    </method>
+  </configuration>
+</component>

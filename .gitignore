@@ -1,0 +1,7 @@
+build/*
+cmake-build-*/
+.settings/**
+/tests/Testing/*
+/.idea/dataSources/
+Generated_Source/
+
