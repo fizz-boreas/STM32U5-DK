@@ -40,11 +40,16 @@ else ()
     add_compile_options(-Og -g)
 endif ()
 
+# ST
 include_directories(Inc Drivers/STM32U5xx_HAL_Driver/Inc Drivers/STM32U5xx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32U5xx/Include Drivers/CMSIS/Include)
+# Libs
+include_directories(Lib/STM32_USB_Device_Library/Class/CDC/Inc Lib/STM32_USB_Device_Library/Core/Inc)
+# USB
+include_directories(Inc/USB/APP Inc/USB/Target)
 
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32U585xx)
 
-file(GLOB_RECURSE SOURCES "Startup/*.*" "Src/*.*" "Drivers/*.*")
+file(GLOB_RECURSE SOURCES "Startup/*.*" "Src/*.*" "Drivers/*.*" Lib/*.c)
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32U585QIIX_FLASH.ld)
 

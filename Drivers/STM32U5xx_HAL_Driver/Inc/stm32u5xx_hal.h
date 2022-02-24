@@ -26,7 +26,7 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32u5xx_hal_conf.h"
+#include "HAL/stm32u5xx_hal_conf.h"
 
 /** @addtogroup STM32U5xx_HAL_Driver
   * @{

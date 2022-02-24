@@ -235,8 +235,6 @@ HAL_StatusTypeDef HAL_PCD_Init(PCD_HandleTypeDef *hpcd)
     (void)HAL_PCDEx_ActivateLPM(hpcd);
   }
 
-  (void)USB_DevDisconnect(hpcd->Instance);
-
   return HAL_OK;
 }
 
