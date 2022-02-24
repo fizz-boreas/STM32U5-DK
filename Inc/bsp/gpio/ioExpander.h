@@ -169,5 +169,9 @@ struct _IoExpanderDriver
     IoExpanderFree free;
 };
 
+/******************************
+ * public prototypes
+ *****************************/
+bool IoExpandersInit(IoExpanderDriver** drivers, I2C_HandleTypeDef** handles, IoExpanderDriverConf* pinsConf);
 
 #endif //DKCORE_IOEXPANDER_H

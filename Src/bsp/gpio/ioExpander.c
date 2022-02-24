@@ -1,32 +1,23 @@
 #include "bsp/gpio/ioExpander.h"
 #include <stdbool.h>
 #include "utils/data.h"
+#include "bsp/gpio/pca9574/pca9574Driver.h"
+
 
 /******************************
- * private section
+ * public section
  *****************************/
-
-typedef struct
+bool IoExpandersInit(IoExpanderDriver** drivers, I2C_HandleTypeDef** handles, IoExpanderDriverConf* pinsConf)
 {
-    bool init;
-    IoExpanderDriver *ioExpanderDriver;
-} Context;
+    bool res = false;
+    uint8_t index = 0;
 
-static Context driverInstances[NBR_OF_IO_EXPANDER];
-
-static Context *getNewInstance()
-{
-    Context *ctx = NULL;
-
-    for (uint16_t index = 0; index < DATA_ARRAY_LENGTH(driverInstances); index++)
+    if(drivers != NULL && handles != NULL && pinsConf != NULL)
     {
-        if (driverInstances[index].init == false)
+        for(uint8_t index = 0; index < NBR_OF_IO_EXPANDER; index++)
         {
-            ctx = &driverInstances[index];
-            driverInstances[index].init = true;
-            break;
+            drivers[index]  = pca9574DriverInit(handles[index], pinsConf[index]);
         }
     }
-    return ctx;
+    return res;
 }
-
