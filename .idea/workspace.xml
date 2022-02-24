@@ -62,11 +62,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../st-dk-bsp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dk-core" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workspace\STM32U5-DK\Inc\bsp\gpio" />
+      <recent name="C:\workspace\STM32U5-DK\Src\bsp" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workspace\STM32U5-DK\Inc\bsp\gpio\pca9574" />
+      <recent name="C:\workspace\STM32U5-DK\Src\bsp\gpio" />
       <recent name="C:\workspace\STM32U5-DK\Inc\HAL" />
       <recent name="C:\workspace\STM32U5-DK\Src\HAL" />
     </key>
@@ -110,7 +117,7 @@
       <updated>1645712284406</updated>
       <workItem from="1645712296609" duration="1913000" />
       <workItem from="1645714830240" duration="3212000" />
-      <workItem from="1645726790264" duration="4908000" />
+      <workItem from="1645726790264" duration="8126000" />
     </task>
     <servers />
   </component>

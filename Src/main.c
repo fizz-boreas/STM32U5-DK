@@ -25,6 +25,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "usb_device.h"
+#include "bsp/gpio/ioExpander.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

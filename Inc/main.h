@@ -84,7 +84,7 @@ void Error_Handler(void);
 #define HOLD_FLASH_Pin GPIO_PIN_11
 #define HOLD_FLASH_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
-
+#define NBR_OF_PCA9574 2
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
