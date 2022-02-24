@@ -23,6 +23,22 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="EmbeddedSvdWindowState">
+    <option name="columnWidths">
+      <list>
+        <option value="187" />
+        <option value="82" />
+        <option value="1541" />
+      </list>
+    </option>
+    <option name="columnOrder">
+      <list>
+        <option value="Name" />
+        <option value="Value" />
+        <option value="Description" />
+      </list>
+    </option>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -94,7 +110,7 @@
       <updated>1645712284406</updated>
       <workItem from="1645712296609" duration="1913000" />
       <workItem from="1645714830240" duration="3212000" />
-      <workItem from="1645726790264" duration="3758000" />
+      <workItem from="1645726790264" duration="4908000" />
     </task>
     <servers />
   </component>
