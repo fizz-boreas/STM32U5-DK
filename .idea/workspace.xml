@@ -13,7 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="794192b8-6597-490a-8d13-7d1dddd1d60f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/manager/flashManager.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/manager/flashManager.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,11 +82,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Embedded GDB Server.Debug DevKit">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_PATH="$BOREAS_FRAMEWORK$/CMake/bin/cmake.exe" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -125,7 +120,8 @@
       <workItem from="1645813756150" duration="7180000" />
       <workItem from="1646062118549" duration="5660000" />
       <workItem from="1646140248938" duration="11686000" />
-      <workItem from="1646155257756" duration="351000" />
+      <workItem from="1646155257756" duration="2140000" />
+      <workItem from="1646162871457" duration="648000" />
     </task>
     <servers />
   </component>

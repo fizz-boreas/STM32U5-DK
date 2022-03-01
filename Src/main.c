@@ -47,6 +47,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+uint8_t gpioChannel = 0;
 RGBLEDColor userColor = {0};
 /* USER CODE END PV */
 
@@ -58,7 +59,7 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+void outputExternalGPIOs();
 /* USER CODE END 0 */
 
 /**
@@ -176,7 +177,17 @@ void HAL_GPIO_EXTI_Falling_Callback(uint16_t GPIO_Pin)
     {
         userColor.raw = (userColor.raw + 1) & 0b0111;
         LedManagerSetColor(LED_D1, userColor);
+
+        gpioChannel = (gpioChannel + 1) & 0b1111;
     }
+}
+
+void outputExternalGPIOs()
+{
+    HAL_GPIO_WritePin(GPIO0_GPIO_Port, GPIO0_Pin, gpioChannel & 0b0001);
+    HAL_GPIO_WritePin(GPIO1_GPIO_Port, GPIO1_Pin, (gpioChannel >> 1)& 0b0001);
+    HAL_GPIO_WritePin(GPIO2_GPIO_Port, GPIO2_Pin, (gpioChannel >> 2)& 0b0001);
+    HAL_GPIO_WritePin(GPIO3_GPIO_Port, GPIO3_Pin, (gpioChannel >> 3)& 0b0001);
 }
 /* USER CODE END 4 */
 
