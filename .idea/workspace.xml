@@ -13,16 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="794192b8-6597-490a-8d13-7d1dddd1d60f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/main.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inc/manager/led.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/manager/led.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inc/stm32u5xx_it.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/stm32u5xx_it.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/STM32U5-DK.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/STM32U5-DK.ioc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/HAL/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/HAL/gpio.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/HAL/i2c.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/HAL/i2c.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/manager/ledManager.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/manager/ledManager.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/stm32u5xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/stm32u5xx_it.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/manager/flashManager.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/manager/flashManager.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +125,7 @@
       <workItem from="1645813756150" duration="7180000" />
       <workItem from="1646062118549" duration="5660000" />
       <workItem from="1646140248938" duration="11686000" />
+      <workItem from="1646155257756" duration="351000" />
     </task>
     <servers />
   </component>

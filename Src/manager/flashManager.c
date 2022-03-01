@@ -76,7 +76,8 @@ bool flashManagerInit()
     {
         if(flashReadData(payload, 3))
         {
-            return payload[1] == 0xEF;
+            instance.init = payload[1] == 0xEF;
+            return instance.init;
         }
     }
     return false;
