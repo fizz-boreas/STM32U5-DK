@@ -25,7 +25,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "usb_device.h"
-#include "bsp/gpio/ioExpander.h"
+#include "manager/ledManager.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -66,7 +66,7 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+    RGBLEDColor color = {0, 1, 0};
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -95,6 +95,14 @@ int main(void)
   MX_SPI2_Init();
   /* USER CODE BEGIN 2 */
   MX_USB_Device_Init();
+
+  LedManagerInit();
+  LedManagerSetColor(LED_D1, color);
+  LedManagerSetColor(LED_D2, color);
+  LedManagerSetColor(LED_DO0, color);
+  LedManagerSetColor(LED_DO1, color);
+  LedManagerSetColor(LED_DO2, color);
+  LedManagerSetColor(LED_DO3, color);
   /* USER CODE END 2 */
 
   /* Infinite loop */

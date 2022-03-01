@@ -69,12 +69,6 @@ typedef struct
     I2cAdrPins a0;
 } I2cBusAdr;
 
-typedef struct
-{
-    I2cBusAdr busAdr;
-} IoExpanderDriverConf;
-
-
 typedef struct _IoExpanderDriver IoExpanderDriver;
 
 /**
@@ -169,9 +163,17 @@ struct _IoExpanderDriver
     IoExpanderFree free;
 };
 
+// init structure
+typedef struct
+{
+    I2C_HandleTypeDef* handle;
+    I2cBusAdr busAdr;
+}IoExpanderDriverConf;
+
 /******************************
  * public prototypes
  *****************************/
-bool IoExpandersInit(IoExpanderDriver** drivers, I2C_HandleTypeDef** handles, IoExpanderDriverConf* pinsConf);
+
+bool IoExpandersInit(IoExpanderDriver** drivers, IoExpanderDriverConf* pinsConf);
 
 #endif //DKCORE_IOEXPANDER_H

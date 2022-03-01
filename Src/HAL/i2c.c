@@ -105,7 +105,6 @@ void MX_I2C2_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN I2C2_Init 2 */
-
   /* USER CODE END I2C2_Init 2 */
 
 }

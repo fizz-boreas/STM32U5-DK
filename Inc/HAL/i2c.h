@@ -37,12 +37,7 @@ extern I2C_HandleTypeDef hi2c2;
 
 /* USER CODE BEGIN Private defines */
 #define I2C_7BIT_ADDRESS_MASK (0x7F)
-/* USER CODE END Private defines */
 
-void MX_I2C1_Init(void);
-void MX_I2C2_Init(void);
-
-/* USER CODE BEGIN Prototypes */
 typedef enum
 {
     I2C_ADR_PIN_GND,
@@ -50,7 +45,13 @@ typedef enum
     I2C_ADR_PIN_SDA,
     I2C_ADR_PIN_SCL,
     I2C_ADR_PIN_INVALID
-} I2cAdrPins;
+} I2cAdrPins;\
+/* USER CODE END Private defines */
+
+void MX_I2C1_Init(void);
+void MX_I2C2_Init(void);
+
+/* USER CODE BEGIN Prototypes */
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus

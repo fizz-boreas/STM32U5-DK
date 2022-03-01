@@ -7,16 +7,16 @@
 /******************************
  * public section
  *****************************/
-bool IoExpandersInit(IoExpanderDriver** drivers, I2C_HandleTypeDef** handles, IoExpanderDriverConf* pinsConf)
+bool IoExpandersInit(IoExpanderDriver** drivers, IoExpanderDriverConf* pinsConf)
 {
     bool res = false;
     uint8_t index = 0;
 
-    if(drivers != NULL && handles != NULL && pinsConf != NULL)
+    if(drivers != NULL && pinsConf != NULL)
     {
-        for(uint8_t index = 0; index < NBR_OF_IO_EXPANDER; index++)
+        while(index < NBR_OF_IO_EXPANDER && pinsConf[index].handle != NULL)
         {
-            drivers[index]  = pca9574DriverInit(handles[index], pinsConf[index]);
+            drivers[index]  = pca9574DriverInit(pinsConf[index].handle, pinsConf[index].busAdr);
         }
     }
     return res;

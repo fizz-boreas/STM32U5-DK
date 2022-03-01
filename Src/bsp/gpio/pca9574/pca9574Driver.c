@@ -173,7 +173,7 @@ static bool writeReg(Context *ctx, const uint8_t regAdr, const uint8_t *reg, con
     return res;
 }
 
-static bool setI2CAddress(Context *ctx, const IoExpanderDriverConf conf)
+static bool setI2CAddress(Context *ctx, const I2cBusAdr pinsConf)
 {
     bool res = false;
     uint16_t i2cTempAdr = I2C_ADR_PIN_INVALID;
@@ -184,7 +184,7 @@ static bool setI2CAddress(Context *ctx, const IoExpanderDriverConf conf)
         ctx->i2cAdr = PCA9574_BASE_ADR;
 
         // Set bit [0]
-        res = convertBusAddress(conf.busAdr.a0, &i2cTempAdr);
+        res = convertBusAddress(pinsConf.a0, &i2cTempAdr);
         if (res)
             ctx->i2cAdr |= (i2cTempAdr & MASK_1_BIT);
 
@@ -199,7 +199,7 @@ static bool setI2CAddress(Context *ctx, const IoExpanderDriverConf conf)
     Public Section
 *************************************************/
 
-IoExpanderDriver *pca9574DriverInit(I2C_HandleTypeDef *i2c, IoExpanderDriverConf conf)
+IoExpanderDriver *pca9574DriverInit(I2C_HandleTypeDef *i2c, I2cBusAdr pinsConf)
 {
     Context *ctx = getNewInstance();
     IoExpanderDriver *driver = NULL;
@@ -211,7 +211,7 @@ IoExpanderDriver *pca9574DriverInit(I2C_HandleTypeDef *i2c, IoExpanderDriverConf
         ctx->i2c = i2c;
 
         // Set I2C address
-        if (setI2CAddress(ctx, conf))
+        if (setI2CAddress(ctx, pinsConf))
             driver = &ctx->driver;
     }
 

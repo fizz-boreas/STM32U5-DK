@@ -27,6 +27,6 @@
 #include "HAL/i2c.h"
 #include "bsp/gpio/ioExpander.h"
 
-IoExpanderDriver *pca9574DriverInit(I2C_HandleTypeDef *i2c, IoExpanderDriverConf conf);
+IoExpanderDriver *pca9574DriverInit(I2C_HandleTypeDef *i2c, I2cBusAdr pinsConf);
 
 #endif //DKCORE_PCA9574DRIVER_H
