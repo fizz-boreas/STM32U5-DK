@@ -46,6 +46,8 @@ include_directories(Inc Drivers/STM32U5xx_HAL_Driver/Inc Drivers/STM32U5xx_HAL_D
 include_directories(Lib/STM32_USB_Device_Library/Class/CDC/Inc Lib/STM32_USB_Device_Library/Core/Inc)
 # USB
 include_directories(Inc/USB/APP Inc/USB/Target)
+# Manager
+include_directories(Inc/manager)
 
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32U585xx)
 

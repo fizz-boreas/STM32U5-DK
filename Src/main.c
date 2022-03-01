@@ -22,10 +22,12 @@
 #include "HAL/sai.h"
 #include "HAL/spi.h"
 #include "HAL/gpio.h"
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "usb_device.h"
 #include "manager/ledManager.h"
+#include "manager/flashManager.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -45,7 +47,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+RGBLEDColor userColor = {0};
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -66,7 +68,8 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-    RGBLEDColor color = {0, 1, 0};
+    RGBLEDColor wakeUpColor = {0, 1, 0};
+    RGBLEDColor errorColor = {1, 0, 0};
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -97,12 +100,18 @@ int main(void)
   MX_USB_Device_Init();
 
   LedManagerInit();
-  LedManagerSetColor(LED_D1, color);
-  LedManagerSetColor(LED_D2, color);
-  LedManagerSetColor(LED_DO0, color);
-  LedManagerSetColor(LED_DO1, color);
-  LedManagerSetColor(LED_DO2, color);
-  LedManagerSetColor(LED_DO3, color);
+
+  LedManagerSetColor(LED_DO0, wakeUpColor);
+  LedManagerSetColor(LED_DO1, wakeUpColor);
+  LedManagerSetColor(LED_DO2, wakeUpColor);
+  LedManagerSetColor(LED_DO3, wakeUpColor);
+
+  if(flashManagerInit())
+  {
+      LedManagerSetColor(LED_D2, wakeUpColor);
+  }else{
+      LedManagerSetColor(LED_D2, errorColor);
+  }
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -161,7 +170,14 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void HAL_GPIO_EXTI_Falling_Callback(uint16_t GPIO_Pin)
+{
+    if(GPIO_Pin == USER_Pin)
+    {
+        userColor.raw = (userColor.raw + 1) & 0b0111;
+        LedManagerSetColor(LED_D1, userColor);
+    }
+}
 /* USER CODE END 4 */
 
 /**

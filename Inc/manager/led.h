@@ -11,9 +11,13 @@ typedef enum
     LED_QUANTITY = 6
 }LED;
 
-typedef struct
+typedef union
 {
-    uint8_t r : 1;
-    uint8_t g : 1;
-    uint8_t b: 1;
+    struct
+    {
+        uint8_t r : 1;
+        uint8_t g : 1;
+        uint8_t b: 1;
+    };
+    uint8_t raw;
 }RGBLEDColor;

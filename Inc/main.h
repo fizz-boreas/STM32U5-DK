@@ -63,6 +63,7 @@ void Error_Handler(void);
 #define GPIO3_GPIO_Port GPIOE
 #define USER_Pin GPIO_PIN_5
 #define USER_GPIO_Port GPIOD
+#define USER_EXTI_IRQn EXTI5_IRQn
 #define GPIO0_Pin GPIO_PIN_4
 #define GPIO0_GPIO_Port GPIOE
 #define GPIO2_Pin GPIO_PIN_2

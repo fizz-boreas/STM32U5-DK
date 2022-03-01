@@ -32,10 +32,6 @@ typedef struct
     GPIO_TypeDef* port;
 } Context;
 
-// ******* IO expander *******
-// I2C handle
-extern I2C_HandleTypeDef hi2c1;
-
 // Context for the LEDManager
 static Context driverInstances[LED_QUANTITY];
 
@@ -70,11 +66,11 @@ bool LedWriteColorForIoExpander(Context* context, RGBLEDColor color)
     if(context != NULL && context->type == LED_TYPE_GPIO)
     {
         res = context->ioExpanderDriver->writeChannel(context->ioExpanderDriver, context->GPIOs[RGB_GPIO_R],
-                                                      color.r == 1 ? GPIOState_High : GPIOState_Low);
+                                                      color.r == 1 ? GPIOState_Low : GPIOState_High);
         res &= context->ioExpanderDriver->writeChannel(context->ioExpanderDriver, context->GPIOs[RGB_GPIO_G],
-                                                      color.g == 1 ? GPIOState_High : GPIOState_Low);
+                                                      color.g == 1 ? GPIOState_Low : GPIOState_High);
         res &= context->ioExpanderDriver->writeChannel(context->ioExpanderDriver, context->GPIOs[RGB_GPIO_B],
-                                                       color.b == 1 ? GPIOState_High : GPIOState_Low);
+                                                       color.b == 1 ? GPIOState_Low : GPIOState_High);
     }
     return res;
 }

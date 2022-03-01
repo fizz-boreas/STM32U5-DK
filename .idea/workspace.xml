@@ -13,16 +13,16 @@
   <component name="ChangeListManager">
     <list default="true" id="794192b8-6597-490a-8d13-7d1dddd1d60f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists_template.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists_template.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inc/HAL/i2c.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/HAL/i2c.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inc/bsp/gpio/ioExpander.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/bsp/gpio/ioExpander.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inc/bsp/gpio/pca9574/pca9574Driver.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/bsp/gpio/pca9574/pca9574Driver.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inc/manager/ledManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/manager/ledManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/manager/led.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/manager/led.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/stm32u5xx_it.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/stm32u5xx_it.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/STM32U5-DK.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/STM32U5-DK.ioc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/HAL/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/HAL/gpio.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Src/HAL/i2c.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/HAL/i2c.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/bsp/gpio/ioExpander.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/bsp/gpio/ioExpander.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/bsp/gpio/pca9574/pca9574Driver.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/bsp/gpio/pca9574/pca9574Driver.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Src/manager/ledManager.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/manager/ledManager.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/stm32u5xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/stm32u5xx_it.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +61,9 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="25YmEXSwMtuLlOybuxaxUeEz1g5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -81,13 +84,18 @@
       <recent name="C:\workspace\STM32U5-DK\Src\bsp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workspace\STM32U5-DK\Src\HAL" />
+      <recent name="C:\workspace\STM32U5-DK\Inc\HAL" />
       <recent name="C:\workspace\STM32U5-DK\Inc\bsp\gpio\pca9574" />
       <recent name="C:\workspace\STM32U5-DK\Src\bsp\gpio" />
-      <recent name="C:\workspace\STM32U5-DK\Inc\HAL" />
-      <recent name="C:\workspace\STM32U5-DK\Src\HAL" />
     </key>
   </component>
   <component name="RunManager" selected="Embedded GDB Server.Debug DevKit">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_PATH="$BOREAS_FRAMEWORK$/CMake/bin/cmake.exe" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -125,7 +133,7 @@
       <workItem from="1645736471958" duration="2462000" />
       <workItem from="1645813756150" duration="7180000" />
       <workItem from="1646062118549" duration="5660000" />
-      <workItem from="1646140248938" duration="1464000" />
+      <workItem from="1646140248938" duration="11686000" />
     </task>
     <servers />
   </component>
