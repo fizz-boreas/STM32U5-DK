@@ -179,6 +179,7 @@ void HAL_GPIO_EXTI_Falling_Callback(uint16_t GPIO_Pin)
         LedManagerSetColor(LED_D1, userColor);
 
         gpioChannel = (gpioChannel + 1) & 0b1111;
+        outputExternalGPIOs();
     }
 }
 
