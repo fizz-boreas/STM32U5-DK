@@ -13,7 +13,9 @@
   <component name="ChangeListManager">
     <list default="true" id="794192b8-6597-490a-8d13-7d1dddd1d60f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists_template.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists_template.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/stm32u5xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/stm32u5xx_it.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +67,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dk-core" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
@@ -121,7 +123,12 @@
       <workItem from="1646062118549" duration="5660000" />
       <workItem from="1646140248938" duration="11686000" />
       <workItem from="1646155257756" duration="2140000" />
-      <workItem from="1646162871457" duration="1581000" />
+      <workItem from="1646162871457" duration="4946000" />
+      <workItem from="1646168040574" duration="2088000" />
+      <workItem from="1646323418880" duration="1913000" />
+      <workItem from="1646331721410" duration="652000" />
+      <workItem from="1646340496543" duration="283000" />
+      <workItem from="1646341336038" duration="1113000" />
     </task>
     <servers />
   </component>

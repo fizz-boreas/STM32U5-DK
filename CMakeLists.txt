@@ -42,8 +42,11 @@ endif ()
 
 # ST
 include_directories(Inc Drivers/STM32U5xx_HAL_Driver/Inc Drivers/STM32U5xx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32U5xx/Include Drivers/CMSIS/Include)
-# Libs
+# USB Lib
 include_directories(Lib/STM32_USB_Device_Library/Class/CDC/Inc Lib/STM32_USB_Device_Library/Core/Inc)
+# FREERTOS Lib
+include_directories(Lib/freertos/Source/include Lib/freertos/Source/CMSIS_RTOS_V2 Lib/freertos/Source/portable/GCC/ARM_CM33/non_secure  Lib/freertos/Source/portable/GCC/ARM_CM33/secure)
+
 # USB
 include_directories(Inc/USB/APP Inc/USB/Target)
 # Manager
